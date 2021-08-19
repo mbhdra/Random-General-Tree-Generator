@@ -19,5 +19,4 @@ public class GeneralTree
 	{
 		this.root = root;
 	}
-	
 }

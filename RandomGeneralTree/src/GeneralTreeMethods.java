@@ -65,7 +65,9 @@ public class GeneralTreeMethods
 		String saltChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
         Random random = new Random();
-        while (salt.length() < keySize) { // length of the random key.
+        while (salt.length() < keySize) 
+        { 	
+        	// length of the random key.
             int index = (int) (random.nextFloat() * saltChars.length());
             salt.append(saltChars.charAt(index));
         }
@@ -141,7 +143,8 @@ public class GeneralTreeMethods
 			System.out.println("A random general tree was generated in JSON array format and saved in: " + filePath);
 			myWriter.write(out);
 			myWriter.close();
-		} catch (IOException e)
+		} 
+		catch (IOException e)
 		{
 		    System.out.println("An error occurred while saving the tree in: " + filePath);
 		    e.printStackTrace();

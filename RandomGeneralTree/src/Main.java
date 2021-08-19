@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Main 
 {
-
 	public static void main(String[] args) 
 	{
 		// parameters
@@ -36,5 +35,4 @@ public class Main
 		GeneralTreeMethods.saveTree("out.txt", out);
 		scanner.close();
 	}
-
 }
