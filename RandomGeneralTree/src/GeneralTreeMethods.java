@@ -63,16 +63,16 @@ public class GeneralTreeMethods
 	private static String randomKey(int keySize) 
 	{
 		String saltChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
-        Random random = new Random();
-        while (salt.length() < keySize) 
-        { 	
-        	// length of the random key.
-            int index = (int) (random.nextFloat() * saltChars.length());
-            salt.append(saltChars.charAt(index));
-        }
-        String saltStr = salt.toString();
-        return saltStr;
+		StringBuilder salt = new StringBuilder();
+		Random random = new Random();
+		while (salt.length() < keySize) 
+		{ 	
+			// length of the random key.
+			int index = (int) (random.nextFloat() * saltChars.length());
+			salt.append(saltChars.charAt(index));
+		}
+		String saltStr = salt.toString();
+		return saltStr;
 	}
 	
 	// print tree in JSON array format (preorder) recursively
@@ -146,8 +146,8 @@ public class GeneralTreeMethods
 		} 
 		catch (IOException e)
 		{
-		    System.out.println("An error occurred while saving the tree in: " + filePath);
-		    e.printStackTrace();
+			System.out.println("An error occurred while saving the tree in: " + filePath);
+			e.printStackTrace();
 		}
 	}
 }
